@@ -505,10 +505,6 @@ address p {
         z-index: 100;
     }
 
-    .menu-tit {
-        display: none;
-    }
-
     .gnb-icon ul>li>a {
         display: none;
     }
@@ -541,13 +537,12 @@ address p {
 
     .menu-area {
         flex-direction: column;
-        justify-content: center;
         position: absolute;
-        right: 50%;
-        top: 310%;
+        right: 15%;
+        top: 104%;
         width: 40px;
         height: 40px;
-        padding: 0;
+        opacity: 1;
     }
 
     .gnb-left,
@@ -573,17 +568,22 @@ address p {
         margin-bottom: 8px;
     }
 
-    .menu-area .menu-item {
-        display: flex;
+    .menu-left>li,
+    .menu-right>li {
+        background: rgba(138, 81, 36, .9);
+        width: 180px;
     }
 
     .menu-left>li>a,
     .menu-right>li>a {
         color: #FEDA8E;
-        margin: auto;
         line-height: 1.4;
         text-align: center;
+        padding: 25px;
+        vertical-align: middle;
+        height: 50%;
     }
+
 
     #all-menu {
         display: block;
@@ -596,13 +596,18 @@ address p {
     }
 
     #all-menu.active {
-        background: url('../img/close-button.png') no-repeat;
+        background: url('../img/close-button.png') no-repeat center;
         background-size: contain;
     }
 
     #content {
         padding: 0 20px;
         width: 100%;
+    }
+
+    .cake-contents-tit+p {
+        font-size: 12px;
+        line-height: 1.4;
     }
 
     .footer-area {
@@ -612,7 +617,10 @@ address p {
         width: 100%;
     }
 
-
+    .cake-contents-tit {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
 }
 
 /* 모바일 */
@@ -620,6 +628,173 @@ address p {
     #wrap .inner {
         width: 100%;
         margin: 0 auto;
+    }
+
+    .logo a {
+        width: 80px;
+    }
+
+    .menu-area {
+        flex-direction: column;
+        position: absolute;
+        right: 30%;
+        top: 104%;
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+    }
+
+    .gnb-left,
+    .gnb-right {
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .gnb-left.active,
+    .gnb-right.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .gnb-icon {
+        display: none;
+    }
+
+    .menu-area .menu-item {
+        display: block;
+        margin: auto;
+        margin-bottom: 8px;
+    }
+
+    .menu-left>li,
+    .menu-right>li {
+        background: rgba(138, 81, 36, .9);
+        width: 180px;
+    }
+
+    .menu-left>li>a,
+    .menu-right>li>a {
+        color: #FEDA8E;
+        line-height: 1.4;
+        text-align: center;
+        padding: 25px;
+        vertical-align: middle;
+        height: 50%;
+    }
+
+
+    #all-menu {
+        display: block;
+        position: absolute;
+        right: 12px;
+        top: -25px;
+        width: 30px;
+        height: 40px;
+        background: url('../img/menu.png') no-repeat center;
+    }
+
+    #all-menu.active {
+        background: url('../img/close-button.png') no-repeat center;
+        width: 35px;
+        height: 40px;
+    }
+
+    .swiper-button-prev {
+        background: none;
+    }
+
+    .swiper-button-next {
+        right: 20px;
+        width: 25px;
+        transform: translate(50%, 178%);
+    }
+
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+    }
+
+    #content {
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .cake-box h2 {
+        font-size: 2.1rem;
+    }
+
+    .btn-more {
+        display: inline-block;
+        position: absolute;
+        left: 343px;
+        top: 95px;
+        color: #8A5124;
+        font-weight: 700;
+        z-index: 1;
+    }
+
+    .cake-wrap ul {
+        position: relative;
+        display: flex;
+        flex-grow: 2;
+        width: 100%;
+        /* height: 100%; */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-basis: 100%;
+        margin-top: auto;
+    }
+
+    .cake-wrap ul li {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .cake-wrap ul strong {
+        display: block;
+        margin: 2px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+    }
+
+    .cake-wrap ul p {
+        margin: 10px;
+        color: #555555;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        word-break: keep-all;
+    }
+
+    .cake-contents-tit+p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .footer-area {
+        position: absolute;
+        top: 70px;
+        left: 655px;
+        width: 100%;
+    }
+
+    .cake-contents-tit {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    #back-to-top {
+        bottom: 2em;
+        right: 1em;
+        padding: 1em;
+        width: 20px;
+        height: 20px;
+        background: url('../img/top.png') no-repeat center, #B58056;
+        background-size: contain;
+        border-radius: 50%;
     }
 
 }

@@ -7,7 +7,7 @@
 	box-sizing: border-box;
 	-webkit-text-size-adjust: none;
 	-webkit-font-smoothing: antialiased;
-	font-family: 'Red Hat Display' , sans-serif;
+	font-family: 'Red Hat Display', sans-serif;
 }
 
 html {
@@ -55,17 +55,6 @@ a:link {
 	text-decoration: none;
 }
 
-a:visited {
-	color: #444;
-}
-
-a:hover {
-	color: #444;
-}
-
-a:active {
-	color: #444;
-}
 
 li {
 	list-style: none;
