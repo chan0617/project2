@@ -26,9 +26,6 @@
   <link rel="stylesheet" href="css/swiper.css" />
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
-  <script src="js/swiper.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="js/gnb.js"></script>
 </head>
 
 <body>
@@ -40,16 +37,22 @@
             HANS
           </a>
         </h1>
+        <!-- 모바일 메뉴 -->
+        <h2 id="all-menu">
+          <a href=" #">
+          </a>
+        </h2>
+
         <div class="menu-area">
-          <div class="gnb-left">
+          <div class="gnb-left ">
             <ul class="menu-left">
-              <li class="menu-tit"><a href="#">HANS STORY</a>
+              <li class="menu-tit"><a href="#" class="menu-item">HANS STORY</a>
                 <ul class="dropdown-1">
                   <li><a href="#">story</a></li>
                   <li><a href="#">contact us</a></li>
                 </ul>
               </li>
-              <li class="menu-tit"><a href="#">TASTE</a>
+              <li class="menu-tit"><a href="#" class="menu-item">TASTE</a>
                 <ul class="dropdown-1">
                   <li><a href="#">cake</a></li>
                   <li><a href="#">sweet&drink</a></li>
@@ -58,16 +61,16 @@
               </li>
             </ul>
           </div>
-          <div class="gnb-right">
+          <div class="gnb-right ">
             <ul class="menu-right">
-              <li class="menu-tit"><a href="#">STORE</a>
+              <li class="menu-tit"><a href="#" class="menu-item">STORE</a>
                 <ul class="dropdown-1">
                   <li><a href="#">space</a></li>
                   <li><a href="#">store</a></li>
                   <li><a href="#">be a family</a></li>
                 </ul>
               </li>
-              <li class="menu-tit"><a href="#">NEWS</a></li>
+              <li class="menu-tit"><a href="#" class="menu-item">NEWS</a></li>
             </ul>
             <div class="gnb-icon">
               <ul>
@@ -79,9 +82,6 @@
         </div><!-- //menu-area -->
       </nav>
     </header>
-    <div class="overlay"></div>
-
-
     <div class="main-visual">
       <!-- Swiper -->
       <div class="swiper mySwiper">
@@ -110,7 +110,7 @@
         <div class="inner">
           <div class="section-tit-box">
             <h2>HANS TASTE</h2>
-            <a href="#" class="btn_more"><span>더보기></span></a>
+            <a href="blog.html" class="btn-more"><span>더보기></span></a>
           </div>
           <div class="cake-wrap">
             <ul class="cake-list">
@@ -140,92 +140,81 @@
               </li>
             </ul>
           </div><!-- //cake-wrap -->
-
-
-          <div class="cake-contents">
-            <div class="contents-area">
-              <div><img src="img/img_conts1.jpg" alt="HANS space">
-                <strong>HANS space</strong>
-                <p>케이크를 즐기는 공간 여러분을 기다리고 있습니다.</p>
-              </div>
-              <ul>
-                <li>
-                  <a href="#"><img src="img/img_conts2.jpg" alt="story">
-                    <strong>HANS story</strong>
-                    <p>매일 새벽. 최고의 케이크를 만들고 있는
-                      HANS의 이유 있는 고집 </p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="img/img_conts3.jpg" alt="faq">
-                    <strong>faq</strong>
-                    <p>HANS의 궁금하신 부분을 안내드립니다.</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/img_conts4.jpg" alt="store">
-                    <strong>HANS store</strong>
-                    <p>프리미엄 디저트 카페 HANS 가까운 곳에서 만나보세요.</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/img_conts5.jpg" alt="NEWS">
-                    <strong>NEWS</strong>
-                    <p>HANS의 새소식을 안내드립니다.</p>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div><!-- //inner -->
       </section>
+      <section class="cake-contents">
+        <div class="contents-area inner">
+          <div><img src="img/img_conts1.jpg" alt="HANS space">
+            <div class="caption">
+              <h2 class="cake-contents-tit">HANS space</h2>
+              <p>케이크를 즐기는 공간 여러분을 기다리고 있습니다.</p>
+            </div>
+          </div>
+          <ul>
+            <li>
+              <a href="#">
+                <div class="caption">
+                  <strong class="cake-contents-tit">HANS story</strong>
+                  <p>매일 새벽. 최고의 케이크를 만들고 있는
+                    HANS의 이유 있는 고집 </p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="caption">
+                  <strong class="cake-contents-tit">faq</strong>
+                  <p>HANS의 궁금하신 부분을 안내드립니다.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="caption">
+                  <strong class="cake-contents-tit">HANS store</strong>
+                  <p>프리미엄 디저트 카페 HANS 가까운 곳에서 만나보세요.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="caption">
+                  <strong class="cake-contents-tit">NEWS</strong>
+                  <p>HANS의 새소식을 안내드립니다.</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </div><!-- //content -->
+
     <footer id="footer">
-      <a href="#top" id="back-to-top">TOP</a>
-      <div class="footer-info">
-        <address>
-          <span>경기 안양시 동안구 시민대로 401 대륭테크노타운 15차 B111호 (관양2동 224-5) ㈜한스제과</span>
-          <span>/ TEL 031-463-3505 사업자등록번호 214-88-63183 </span>
-          <span>/ 통신판매업신고 제2013-경기안양-0039호 </span>
-          <span>/ 대표이사 안영식, 한성훈, 안주태</span>
-          <p>Copyright 2011© HANS CAKE. All Right Reserved</p>
-        </address>
-      </div>
-      <div class="footer-area">
-        <a href="#">FAQ</a>
-        <a href="#">SITE MAP</a>
+      <div class="footer-inner inner">
+        <a href="#top" id="back-to-top"></a>
+        <div class="footer-info">
+          <a href="#" class="footer-logo"><img src="img/footer_logo.png" alt="하단로고"></a>
+          <address>
+            <span>경기 안양시 동안구 시민대로 401 대륭테크노타운 15차 B111호 (관양2동 224-5) ㈜한스제과</span>
+            <br />
+            <span>/ TEL 031-463-3505 사업자등록번호 214-88-63183 </span>
+            <span>/ 통신판매업신고 제2013-경기안양-0039호 </span>
+            <span>/ 대표이사 안영식, 한성훈, 안주태</span>
+            <p>Copyright 2011© HANS CAKE. All Right Reserved</p>
+          </address>
+          <div class="footer-area">
+            <a href="#">FAQ></a>
+            <a href="#">SITE MAP></a>
+          </div>
+        </div>
       </div>
     </footer>
-  </div>
+  </div><!-- //#wrap -->
+
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <!-- Initialize Swiper -->
-  <script>
-
-    var swiper = new Swiper(".mySwiper", {
-      // autoHeight : true,
-      loop: true,
-      slidesPerView: 1,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        800: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-      },
-    });
-  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/gnb.js"></script>
   <script src="js/topbutton.js"></script>
 
 </body>

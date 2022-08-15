@@ -15,7 +15,11 @@
     position: absolute;
     z-index: 100;
     position: fixed;
+
 }
+
+
+
 
 nav.navbar {
     position: relative;
@@ -42,10 +46,6 @@ nav.navbar {
 }
 
 /* nav */
-#all-menu {
-    display: none;
-}
-
 .menu-area {
     display: flex;
     height: 100%;
@@ -107,6 +107,7 @@ nav.navbar {
     background: #8A5124;
 }
 
+/* 2댑스감추기 */
 .menu-area .dropdown-1 {
     background: #FEDA8E;
     display: none;
@@ -118,6 +119,12 @@ nav.navbar {
     width: 150px;
 }
 
+/* .dropdown-1 {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+} */
+
 .dropdown-1 a {
     color: #8A5124;
     display: block;
@@ -125,6 +132,7 @@ nav.navbar {
     text-transform: uppercase;
     font-weight: 700;
 }
+
 
 .gnb-icon ul>li>a {
     display: inline-block;
@@ -156,6 +164,7 @@ nav.navbar {
 .overlay.show {
     opacity: 1;
 }
+
 
 .main-visual {
     position: relative;
@@ -225,11 +234,11 @@ nav.navbar {
     padding: 90px 0;
     display: flex;
     align-content: center;
-    height: 100vh;
 }
 
+
 .cake-box::after {
-    background: url(../img/line.png) no-repeat center top 8px;
+    background: url(../img/line_2.png) no-repeat center top 8px;
     position: absolute;
     top: 10%;
     left: 0px;
@@ -253,10 +262,14 @@ nav.navbar {
     text-align: left;
     color: #8A5124;
     font-weight: 700;
-    z-index: 1;
 }
 
-
+/* .cake-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+} */
 .cake-wrap ul {
     position: relative;
     display: flex;
@@ -267,6 +280,7 @@ nav.navbar {
     align-items: center;
 }
 
+
 .cake-wrap ul strong {
     display: block;
     margin: 20px;
@@ -276,15 +290,6 @@ nav.navbar {
     line-height: 30px;
 }
 
-.cake-wrap ul p {
-    margin: 10px 0 0 0;
-    color: #555555;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0;
-    text-align: center;
-    word-break: keep-all;
-}
 
 .cake-wrap ul li {
     width: calc(100%/4 - 50px);
@@ -313,113 +318,7 @@ nav.navbar {
     width: 100%;
 }
 
-/* cake-contents */
-.cake-contents {
-    padding: 96px 0;
-    height: 100vh;
-}
 
-.contents-area {
-    position: relative;
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-    /* min-height: 100; */
-    align-items: center;
-    height: 100%;
-    overflow: hidden;
-}
-
-.contents-area li:nth-child(1) {
-    background: url('../img/img_conts2.png') no-repeat center;
-    background-size: cover;
-}
-
-.contents-area li:nth-child(2) {
-    background: url('../img/img_conts3.png') no-repeat center;
-    background-size: cover;
-}
-
-.contents-area li:nth-child(3) {
-    background: url('../img/img_conts4.png') no-repeat center;
-    background-size: cover;
-}
-
-.contents-area li:nth-child(4) {
-    background: url('../img/img_conts5.png') no-repeat center;
-    background-size: cover;
-}
-
-.contents-area img {
-    width: 100%;
-}
-
-.contents-area:first-child>div {
-    width: calc(60% - 50px);
-    height: 100%;
-}
-
-.contents-area:first-child>ul {
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
-    width: calc(40% - 7px);
-    height: 100%;
-}
-
-.contents-area:first-child>ul li {
-    position: relative;
-    width: calc(100%/2 - 6px);
-    height: calc(100%/2 - 6px);
-}
-
-.contents-area:first-child>ul li:nth-child(odd) {
-    margin-right: 12px;
-}
-
-.contents-area ul li:nth-child(1),
-.contents-area ul li:nth-child(2) {
-    margin-bottom: 12px;
-}
-
-
-.contents-area a {
-    position: relative;
-    display: block;
-    height: 100%;
-}
-
-.contents-area a img {
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-
-}
-
-.cake-contents-tit {
-    font-size: 24px;
-    color: #fff;
-    margin-bottom: 15px;
-    display: inline-block;
-}
-
-
-.caption {
-    position: absolute;
-    bottom: 10%;
-    padding: 24px;
-}
-
-.contents-area ul li .caption {
-    bottom: -4%;
-}
-
-.cake-contents-tit+p {
-    font-size: 14px;
-    color: #fff;
-}
 
 /* footer */
 #footer {
@@ -479,147 +378,4 @@ address p {
 
 #back-to-top.visible {
     opacity: 1;
-}
-
-/* 데스크탑~노트북 */
-@media screen and (min-width:961px) and (max-width:1280px) {
-    #wrap .inner {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    #header {
-        width: 100%;
-    }
-
-    .logo {
-        position: relative;
-        left: 0%;
-        top: 0;
-    }
-
-    .logo a {
-        position: absolute;
-        width: 100%;
-        left: 50%;
-        z-index: 100;
-    }
-
-    .menu-tit {
-        display: none;
-    }
-
-    .gnb-icon ul>li>a {
-        display: none;
-    }
-
-    #content {
-        padding: 0 20px;
-        width: 100%;
-    }
-
-    #back-to-top {
-        position: absolute;
-    }
-
-    .footer-area {
-        position: absolute;
-        top: 70px;
-        left: 655px;
-        width: 100%;
-    }
-
-}
-
-
-/* 테블릿 */
-@media screen and (max-width: 960px) {
-    #wrap .inner {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .menu-area {
-        flex-direction: column;
-        justify-content: center;
-        position: absolute;
-        right: 50%;
-        top: 310%;
-        width: 40px;
-        height: 40px;
-        padding: 0;
-    }
-
-    .gnb-left,
-    .gnb-right {
-        align-items: center;
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    .gnb-left.active,
-    .gnb-right.active {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .gnb-icon {
-        display: none;
-    }
-
-    .menu-area .menu-item {
-        display: block;
-        margin: auto;
-        margin-bottom: 8px;
-    }
-
-    .menu-area .menu-item {
-        display: flex;
-    }
-
-    .menu-left>li>a,
-    .menu-right>li>a {
-        color: #FEDA8E;
-        margin: auto;
-        line-height: 1.4;
-        text-align: center;
-    }
-
-    #all-menu {
-        display: block;
-        position: absolute;
-        right: 12px;
-        top: -25px;
-        width: 40px;
-        height: 40px;
-        background: url('../img/menu.png') no-repeat center;
-    }
-
-    #all-menu.active {
-        background: url('../img/close-button.png') no-repeat;
-        background-size: contain;
-    }
-
-    #content {
-        padding: 0 20px;
-        width: 100%;
-    }
-
-    .footer-area {
-        position: absolute;
-        top: 70px;
-        left: 655px;
-        width: 100%;
-    }
-
-
-}
-
-/* 모바일 */
-@media screen and (max-width: 480px) {
-    #wrap .inner {
-        width: 100%;
-        margin: 0 auto;
-    }
-
 }

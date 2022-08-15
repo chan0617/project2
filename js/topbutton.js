@@ -1,9 +1,5 @@
-
-
 const btt = document.querySelector("#back-to-top");
 let scrollAmount;
-
-
 
 window.addEventListener("scroll", function () {
   scrollAmount = this.scrollY;
@@ -15,6 +11,9 @@ window.addEventListener("scroll", function () {
 });
 btt.addEventListener("click", function (e) {
   e.preventDefault();
-  document.querySelector(btt.getAttribute("href"))
-  .scrollIntoView({ behavior: "smooth" });
+  // document.querySelector(btt.getAttribute("href"))
+  // .scrollIntoView({ behavior: "smooth" });
+
+
+  window.scrollTo({top: 0, behavior: 'smooth'});
 });
