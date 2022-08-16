@@ -531,7 +531,7 @@ address p {
     display: block;
     position: absolute;
     right: 12px;
-    top: -25px;
+    top: 26px;
     width: 40px;
     height: 40px;
     background: url("../img/menu.png") no-repeat center;
@@ -589,8 +589,14 @@ address p {
   .cake-contents-tit + p {
     font-size: 12px;
     line-height: 1.4;
+    margin-bottom:0;
+    background: rgba(138, 81, 36,.7);
   }
-
+  .contents-area h2+p{
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom:163px;
+  }
   .footer-area {
     position: absolute;
     top: 70px;
@@ -600,7 +606,8 @@ address p {
 
   .cake-contents-tit {
     font-size: 20px;
-    margin-bottom: 5px;
+    font-weight: 700;
+    margin-bottom: 3px;
   }
 
   #back-to-top {
@@ -676,12 +683,37 @@ address p {
     display: block;
     position: absolute;
     right: 12px;
-    top: -25px;
+    top: 24px;
     width: 30px;
     height: 40px;
     background: url("../img/menu.png") no-repeat center;
   }
+  
+  /* .contents-area:first-child > div{
+    width: 0;
+    height: 0;
+  } */
 
+  .contents-area img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .contents-area{
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .contents-area:first-child > div {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .cake-contents{
+    padding: 50px 0;
+  }
+  .contents-area:first-child > ul
+  {
+    width: 100%;
+  }
   #all-menu.active {
     background: url("../img/close-button.png") no-repeat center;
     width: 35px;
