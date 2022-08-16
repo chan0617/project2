@@ -1,222 +1,308 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한스케이크</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="faviconfavicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>한스케이크</title>
-  <link rel="apple-touch-icon" sizes="57x57" href="faviconfavicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="css/swiper.css" />
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/common.css">
-</head>
-
-<body>
-  <div id="wrap">
-    <header id="header">
-      <nav id="top" class="navbar inner">
-        <h1 class="logo">
-          <a href="#">
-            HANS
-          </a>
-        </h1>
-        <!-- 모바일 메뉴 -->
-        <h2 id="all-menu">
-          <a href=" #">
-          </a>
-        </h2>
-
-        <div class="menu-area">
-          <div class="gnb-left ">
-            <ul class="menu-left">
-              <li class="menu-tit"><a href="#" class="menu-item">HANS STORY</a>
-                <ul class="dropdown-1">
-                  <li><a href="#">story</a></li>
-                  <li><a href="#">contact us</a></li>
-                </ul>
-              </li>
-              <li class="menu-tit"><a href="#" class="menu-item">TASTE</a>
-                <ul class="dropdown-1">
-                  <li><a href="#">cake</a></li>
-                  <li><a href="#">sweet&drink</a></li>
-                  <li><a href="#">special orders</a></li>
-                </ul>
-              </li>
-            </ul>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <nav id="top" class="navbar inner">
+          <h1 class="logo">
+            <a href="#"> HANS </a>
+          </h1>
+          <!-- 모바일 메뉴 -->
+          <div id="all-menu">
+            <a href=" #"></a>
           </div>
-          <div class="gnb-right ">
-            <ul class="menu-right">
-              <li class="menu-tit"><a href="#" class="menu-item">STORE</a>
-                <ul class="dropdown-1">
-                  <li><a href="#">space</a></li>
-                  <li><a href="#">store</a></li>
-                  <li><a href="#">be a family</a></li>
-                </ul>
-              </li>
-              <li class="menu-tit"><a href="#" class="menu-item">NEWS</a></li>
-            </ul>
-            <div class="gnb-icon">
-              <ul>
-                <li><a href="#" class="icon1"></a></li>
-                <li><a href="#" class="icon2"></a></li>
+          <div class="menu-area">
+            <div class="gnb-left">
+              <ul class="menu-left">
+                <li class="menu-tit">
+                  <a href="#" class="menu-item">HANS STORY</a>
+                  <ul class="dropdown-1">
+                    <li><a href="#">story</a></li>
+                    <li><a href="#">contact us</a></li>
+                  </ul>
+                </li>
+                <li class="menu-tit">
+                  <a href="#" class="menu-item">TASTE</a>
+                  <ul class="dropdown-1">
+                    <li><a href="#">cake</a></li>
+                    <li><a href="#">sweet&drink</a></li>
+                    <li><a href="#">special orders</a></li>
+                  </ul>
+                </li>
               </ul>
             </div>
+            <div class="gnb-right">
+              <ul class="menu-right">
+                <li class="menu-tit">
+                  <a href="#" class="menu-item">STORE</a>
+                  <ul class="dropdown-1">
+                    <li><a href="#">space</a></li>
+                    <li><a href="#">store</a></li>
+                    <li><a href="#">be a family</a></li>
+                  </ul>
+                </li>
+                <li class="menu-tit"><a href="#" class="menu-item">NEWS</a></li>
+              </ul>
+              <div class="gnb-icon">
+                <ul>
+                  <li><a href="#" class="icon1"></a></li>
+                  <li><a href="#" class="icon2"></a></li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div><!-- //menu-area -->
-      </nav>
-    </header>
-    <div class="main-visual">
-      <!-- Swiper -->
-      <div class="swiper mySwiper">
-        <ul class="swiper-wrapper viewImgList">
-          <li class="swiper-slide imglist0">
-            <div class="roll-content"></div>
-            <a href="#"></a>
-          </li>
-          <li class="swiper-slide imglist1">
-            <div class="roll-content"></div>
-            <a href="#"></a>
-          </li>
-          <li class="swiper-slide imglist2">
-            <div class="roll-content"></div>
-            <a href="#"></a>
-          </li>
-        </ul>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+          <!-- //menu-area -->
+        </nav>
+      </header>
+      <div class="main-visual">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <ul class="swiper-wrapper viewImgList">
+            <li class="swiper-slide imglist0">
+              <a href="#"><img src="img/mian_slid1.jpg" alt="슬라이드1" /></a>
+            </li>
+            <li class="swiper-slide imglist1">
+              <a href="#"><img src="img/mian_slid2.jpg" alt="슬라이드2" /></a>
+            </li>
+            <li class="swiper-slide imglist2">
+              <a href="#"><img src="img/mian_slid3.jpg" alt="슬라이드3" /></a>
+            </li>
+          </ul>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
-    </div><!-- //main-visual -->
+      <!-- //main-visual -->
 
-    <div id="content">
-      <section class="cake-box">
-        <div class="inner">
-          <div class="section-tit-box">
-            <h2>HANS TASTE</h2>
-            <a href="blog.html" class="btn-more"><span>더보기></span></a>
+      <div id="content">
+        <section class="cake-box">
+          <div class="inner">
+            <div class="section-tit-box">
+              <h2>HANS TASTE</h2>
+              <a href="blog.html" class="btn-more"><span>더보기></span></a>
+            </div>
+            <div class="cake-wrap">
+              <ul class="cake-list">
+                <li class="cake-item">
+                  <a href="#">
+                    <img src="img/cake_01.png" alt="망고케이크" />
+                    <strong>Mango Cream Cake</strong>
+                    <p>
+                      새콤달콤한 생망고와 부드러운 망고생크림의 만남, 촉촉한
+                      화이트 시트와 함께하는 케이크
+                    </p>
+                  </a>
+                </li>
+                <li class="cake-item">
+                  <a href="#">
+                    <img src="img/cake_02.png" alt="고구마케이크" />
+                    <strong
+                      >HANS Genuine<br />
+                      Sweet Potato Cake</strong
+                    >
+                    <p>
+                      품질 좋은 국산 고구마를 직접 사용한 맛 좋고 부드러운
+                      고구마 케이크
+                    </p>
+                  </a>
+                </li>
+                <li class="cake-item">
+                  <a href="#">
+                    <img src="img/cake_03.png" alt="초코케이크" />
+                    <strong>Ganache Chocolate Cake</strong>
+                    <p>
+                      촉촉한 초코 시트 속에 스위스산 다크 초콜릿과 부드러운
+                      생크림의 조화
+                    </p>
+                  </a>
+                </li>
+                <li class="cake-item">
+                  <a href="#">
+                    <img src="img/cake_04.png" alt="망고케이크" />
+                    <strong
+                      >HANS Strawberry<br />
+                      Cream Cake</strong
+                    >
+                    <p>
+                      부드러운 화이트 시트와 달콤한 커스터드 크림, 새콤한 산딸기
+                      시럽이 어우러진 케이크
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- //cake-wrap -->
           </div>
-          <div class="cake-wrap">
-            <ul class="cake-list">
-              <li class="cake-item"><a href="#">
-                  <img src="img/cake_01.png" alt="망고케이크">
-                  <strong>Mango Cream Cake</strong>
-                  <p>새콤달콤한 생망고와 부드러운 망고생크림의 만남, 촉촉한 화이트 시트와 함께하는 케이크</p>
+          <!-- //inner -->
+        </section>
+        <section class="cake-contents">
+          <div class="contents-area inner">
+            <div>
+              <img src="img/img_conts1.jpg" alt="HANS space" />
+              <div class="caption">
+                <h2 class="cake-contents-tit">HANS space</h2>
+                <p>케이크를 즐기는 공간 여러분을 기다리고 있습니다.</p>
+              </div>
+            </div>
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="caption">
+                    <strong class="cake-contents-tit">HANS story</strong>
+                    <p>
+                      매일 새벽. 최고의 케이크를 만들고 있는 HANS의 이유 있는
+                      고집
+                    </p>
+                  </div>
                 </a>
               </li>
-              <li class="cake-item"><a href="#">
-                  <img src="img/cake_02.png" alt="고구마케이크">
-                  <strong>HANS Genuine<br /> Sweet Potato Cake</strong>
-                  <p>품질 좋은 국산 고구마를 직접 사용한 맛 좋고 부드러운 고구마 케이크</p>
+              <li>
+                <a href="#">
+                  <div class="caption">
+                    <strong class="cake-contents-tit">faq</strong>
+                    <p>HANS의 궁금하신 부분을 안내드립니다.</p>
+                  </div>
                 </a>
               </li>
-              <li class="cake-item"><a href="#">
-                  <img src="img/cake_03.png" alt="초코케이크">
-                  <strong>Ganache Chocolate Cake</strong>
-                  <p>촉촉한 초코 시트 속에 스위스산 다크 초콜릿과 부드러운 생크림의 조화</p>
+              <li>
+                <a href="#">
+                  <div class="caption">
+                    <strong class="cake-contents-tit">HANS store</strong>
+                    <p>프리미엄 디저트 카페 HANS 가까운 곳에서 만나보세요.</p>
+                  </div>
                 </a>
               </li>
-              <li class="cake-item"><a href="#">
-                  <img src="img/cake_04.png" alt="망고케이크">
-                  <strong>HANS Strawberry<br /> Cream Cake</strong>
-                  <p>부드러운 화이트 시트와 달콤한 커스터드 크림, 새콤한 산딸기 시럽이 어우러진 케이크</p>
+              <li>
+                <a href="#">
+                  <div class="caption">
+                    <strong class="cake-contents-tit">NEWS</strong>
+                    <p>HANS의 새소식을 안내드립니다.</p>
+                  </div>
                 </a>
               </li>
             </ul>
-          </div><!-- //cake-wrap -->
-        </div><!-- //inner -->
-      </section>
-      <section class="cake-contents">
-        <div class="contents-area inner">
-          <div><img src="img/img_conts1.jpg" alt="HANS space">
-            <div class="caption">
-              <h2 class="cake-contents-tit">HANS space</h2>
-              <p>케이크를 즐기는 공간 여러분을 기다리고 있습니다.</p>
+          </div>
+        </section>
+      </div>
+      <!-- //content -->
+      <footer id="footer">
+        <div class="footer-inner inner">
+          <a href="#top" id="back-to-top"></a>
+          <div class="footer-info">
+            <a href="#" class="footer-logo"
+              ><img src="img/footer_logo.png" alt="하단로고"
+            /></a>
+            <address>
+              <span
+                >경기 안양시 동안구 시민대로 401 대륭테크노타운 15차 B111호
+                (관양2동 224-5) ㈜한스제과</span
+              >
+              <br />
+              <span>/ TEL 031-463-3505 사업자등록번호 214-88-63183 </span>
+              <span>/ 통신판매업신고 제2013-경기안양-0039호 </span>
+              <span>/ 대표이사 안영식, 한성훈, 안주태</span>
+              <p>Copyright 2011© HANS CAKE. All Right Reserved</p>
+            </address>
+            <div class="footer-area">
+              <a href="#">FAQ></a>
+              <a href="#">SITE MAP></a>
             </div>
           </div>
-          <ul>
-            <li>
-              <a href="#">
-                <div class="caption">
-                  <strong class="cake-contents-tit">HANS story</strong>
-                  <p>매일 새벽. 최고의 케이크를 만들고 있는
-                    HANS의 이유 있는 고집 </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="caption">
-                  <strong class="cake-contents-tit">faq</strong>
-                  <p>HANS의 궁금하신 부분을 안내드립니다.</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="caption">
-                  <strong class="cake-contents-tit">HANS store</strong>
-                  <p>프리미엄 디저트 카페 HANS 가까운 곳에서 만나보세요.</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="caption">
-                  <strong class="cake-contents-tit">NEWS</strong>
-                  <p>HANS의 새소식을 안내드립니다.</p>
-                </div>
-              </a>
-            </li>
-          </ul>
         </div>
-      </section>
-    </div><!-- //content -->
-
-    <footer id="footer">
-      <div class="footer-inner inner">
-        <a href="#top" id="back-to-top"></a>
-        <div class="footer-info">
-          <a href="#" class="footer-logo"><img src="img/footer_logo.png" alt="하단로고"></a>
-          <address>
-            <span>경기 안양시 동안구 시민대로 401 대륭테크노타운 15차 B111호 (관양2동 224-5) ㈜한스제과</span>
-            <br />
-            <span>/ TEL 031-463-3505 사업자등록번호 214-88-63183 </span>
-            <span>/ 통신판매업신고 제2013-경기안양-0039호 </span>
-            <span>/ 대표이사 안영식, 한성훈, 안주태</span>
-            <p>Copyright 2011© HANS CAKE. All Right Reserved</p>
-          </address>
-          <div class="footer-area">
-            <a href="#">FAQ></a>
-            <a href="#">SITE MAP></a>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div><!-- //#wrap -->
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <!-- Initialize Swiper -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="js/gnb.js"></script>
-  <script src="js/topbutton.js"></script>
-
-</body>
-
+      </footer>
+    </div>
+    <!-- //#wrap -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/gnb.js"></script>
+    <script src="js/topbutton.js"></script>
+  </body>
 </html>

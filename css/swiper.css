@@ -21,7 +21,7 @@
   --swiper-theme-color: #007aff;
 }
 
-.swiper {
+/* .swiper {
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -29,6 +29,35 @@
   list-style: none;
   padding: 0;
   z-index: 1;
+} */
+/* swiper */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.swiper-slide a img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.viewImgList {
+  position: relative;
+  width: 100%;
+}
+
+.viewImgList li {
+  text-align: center;
+  height: 100vh;
+  line-height: 550px;
+}
+
+.viewImgList li  {
+  position: relative;
 }
 
 .swiper-vertical>.swiper-wrapper {

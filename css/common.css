@@ -164,62 +164,9 @@ nav.navbar {
   height: 100vh;
 }
 
-/* swiper */
-
-.swiper {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
-.viewImgList {
-  position: relative;
-  width: 100%;
-}
-
-.viewImgList li {
-  text-align: center;
-  height: 100vh;
-
-  line-height: 550px;
-}
-
-.viewImgList li.imglist0 {
-  background: url("../img/mian_slid1.jpg") no-repeat center;
-}
-
-.viewImgList li.imglist1 {
-  background: url("../img/mian_slid2.jpg") no-repeat center;
-}
-
-.viewImgList li.imglist2 {
-  background: url("../img/mian_slid3.jpg") no-repeat center;
-}
-
-.viewImgList li {
-  background-size: cover !important;
-}
-
-.viewImgList li .roll-content {
-  position: relative;
-}
-
-.viewImgList li .roll-content {
-  position: absolute;
-  left: 0;
-  color: #fff;
-  width: 100%;
-  text-align: center;
-  font-size: 0px;
-  line-height: 1;
-  letter-spacing: 2px;
-}
 
 /* content */
 .cake-box {
-  /* background: #FEDA8E; */
   text-align: center;
   position: relative;
   padding: 90px 0;
@@ -613,7 +560,6 @@ address p {
     width: 100%;
   }
   .contents-area img {
-    /* height: 609px; */
     height: 100vh;
   }
   .cake-contents-tit + p {
@@ -639,7 +585,35 @@ address p {
 }
 
 /* 모바일 */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px){  
+  .cake-contents-tit + p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .footer-area {
+    position: absolute;
+    top: 70px;
+    left: 655px;
+    width: 100%;
+  }
+
+  .cake-contents-tit {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  #back-to-top {
+    bottom: 2em;
+    right: 1em;
+    padding: 1em;
+    width: 20px;
+    height: 20px;
+    background: url("../img/top.png") no-repeat center, #b58056;
+    background-size: contain;
+    border-radius: 50%;
+  }
+
   #wrap .inner {
     width: 100%;
     margin: 0 auto;
@@ -732,9 +706,18 @@ address p {
     padding: 0 20px;
     width: 100%;
   }
-
+  .cake-box {
+    height: 100%;
+    padding: 0;
+  }
+  .cake-box::after{
+    top: 1%;
+  }
   .cake-box h2 {
     font-size: 2.1rem;
+  }
+  .cake-wrap ul li:last-child{
+    padding-right: 40px;
   }
 
   .btn-more {
@@ -760,7 +743,6 @@ address p {
   .cake-wrap ul li {
     overflow: hidden;
     width: 100%;
-    height: 50%;
   }
 
   .cake-wrap ul strong {
@@ -780,32 +762,11 @@ address p {
     word-break: keep-all;
     font-size: 14px;
   }
+  
 
-  .cake-contents-tit + p {
-    font-size: 12px;
-    line-height: 1.4;
+  address{
+    padding-top: 16px;
+    font-size: 10px;
   }
 
-  .footer-area {
-    position: absolute;
-    top: 70px;
-    left: 655px;
-    width: 100%;
-  }
-
-  .cake-contents-tit {
-    font-size: 20px;
-    margin-bottom: 5px;
-  }
-
-  #back-to-top {
-    bottom: 2em;
-    right: 1em;
-    padding: 1em;
-    width: 20px;
-    height: 20px;
-    background: url("../img/top.png") no-repeat center, #b58056;
-    background-size: contain;
-    border-radius: 50%;
-  }
 }
