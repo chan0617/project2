@@ -1,0 +1,279 @@
+/* 컨테이너폭 */
+.inner {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+#header {
+    width: 100%;
+    border-bottom: 4px solid rgb(254, 218, 142);
+    border-top: 2px solid rgb(255, 255, 255);
+    background: #fff;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 100;
+    position: fixed;
+}
+
+nav.navbar {
+    position: relative;
+    height: 90px;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.logo a {
+    background: url("../img/mian_logo.svg") center no-repeat;
+    background-size: contain;
+    display: inline-block;
+    overflow: hidden;
+    width: 107px;
+    height: 77px;
+    font-size: 0;
+}
+
+/* nav */
+#all-menu {
+    display: none;
+}
+
+.menu-area {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.gnb-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-left::after,
+.menu-right::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.menu-left>li,
+.menu-right>li,
+.gnb-icon ul>li {
+    position: relative;
+    float: left;
+    margin-right: 5px;
+}
+
+.menu-left>li>a,
+.menu-right>li>a {
+    display: inline-block;
+    padding: 0 15px;
+    height: 90px;
+    font-weight: 700;
+    line-height: 90px;
+    color: #8a5124;
+}
+
+.menu-tit>a::after {
+    position: relative;
+    content: "";
+    display: block;
+    border-bottom: 5px solid rgba(138, 81, 36, 0.5);
+    border-radius: 50px;
+    transition: width 250ms ease-out;
+    bottom: 30px;
+    left: auto;
+    right: 0;
+    width: 0;
+}
+
+.menu-tit>a.active::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.dropdown-1 li a:hover {
+    color: #fff;
+    background: #8a5124;
+}
+
+.menu-area .dropdown-1 {
+    background: #feda8e;
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+    width: 150px;
+}
+
+.dropdown-1 a {
+    color: #8a5124;
+    display: block;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.gnb-icon ul>li>a {
+    display: inline-block;
+}
+
+.icon1 {
+    background: url("../img/icon1.png") no-repeat center;
+    width: 50px;
+    height: 50px;
+    transform: translate(50%, 50%);
+}
+
+.icon2 {
+    background: url("../img/icon2.png") no-repeat center;
+    width: 50px;
+    height: 50px;
+    transform: translate(50%, 50%);
+}
+
+
+
+/* content */
+#content {
+    width: 100%;
+    overflow: hidden;
+}
+
+.lnb-area {
+    position: relative;
+    top: 130px;
+    text-align: center;
+}
+
+.lnb-inner-box h3 {
+    color: #8a5124;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.story-tit ul li {
+    display: inline-block;
+}
+
+.story-tit ul li a {
+    width: 220px;
+    height: 54px;
+    line-height: 54px;
+    color: #8a5124;
+    font-weight: bold;
+    margin-left: -5px;
+    padding: 7px;
+}
+
+
+.story-tit {
+    margin: 80px;
+    height: 50px;
+}
+
+.story-tit2 {
+    color: #555;
+    margin-top: -55px;
+}
+
+.story-tit2::before {
+    content: '';
+    display: block;
+    margin: 10px auto;
+    width: 23px;
+    height: 1px;
+    background-color: #000;
+    margin-top: 35px;
+}
+
+.story-tit ul li:nth-child(2) a {
+    color: #b58056;
+    font-weight: 400;
+}
+
+.sub-visual-box {
+    height: 100vh;
+    position: relative;
+    top: 35px;
+    text-align: center;
+}
+
+
+.story-bg-wrap1 p {
+    padding-top: 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* footer */
+#footer {
+    background: #8a5124;
+}
+
+.footer-inner {
+    position: relative;
+    margin: 0 auto;
+}
+
+.footer-info {
+    display: flex;
+    align-items: center;
+    height: 123px;
+}
+
+address {
+    margin-left: 40px;
+    color: #8c8c8c;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+address span {
+    display: inline-block;
+}
+
+address p {
+    margin-top: 10px;
+}
+
+.footer-area {
+    margin-left: auto;
+    margin-right: 130px;
+}
+
+.footer-area a {
+    color: #8a5124;
+    margin-left: 10px;
+    background: #b58056;
+    border-radius: 50px;
+    font-weight: 700;
+    padding: 0 8px;
+}
+
+/* top button */
+#back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    background: url("../img/top.png") no-repeat;
+    display: inline-block;
+    padding: 1em;
+    opacity: 0;
+}
+
+#back-to-top.visible {
+    opacity: 1;
+}

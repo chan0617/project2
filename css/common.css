@@ -316,8 +316,8 @@ nav.navbar {
 
 .contents-area:first-child > ul li {
   position: relative;
-  width: calc(100% / 2 - 6px);
-  height: calc(100% / 2 - 6px);
+  width: calc(50% - 6px);
+  height: calc(50% - 6px);
 }
 
 .contents-area:first-child > ul li:nth-child(odd) {
