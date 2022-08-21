@@ -204,7 +204,7 @@ nav.navbar {
 }
 
 .sub-visual-box {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     top: 35px;
     text-align: center;
