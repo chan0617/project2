@@ -410,6 +410,16 @@ address p {
   padding: 0 8px;
 }
 
+.footer-area a:nth-child(3),
+.footer-area a:nth-child(4){    
+  position: absolute;
+  left: 91%;
+  background: none;
+}
+.footer-area a:nth-child(4){
+  left: 98%;
+}
+
 /* top button */
 #back-to-top {
   position: fixed;
@@ -478,6 +488,17 @@ address p {
     left: 655px;
     width: 100%;
   }
+ 
+  .footer-area a:nth-child(3),
+  .footer-area a:nth-child(4){    
+  background: none;
+  position: absolute;
+  left: -25%;
+  }
+  .footer-area a:nth-child(4){
+    left: -14%;
+  }
+
 }
 
 /* 테블릿 */
@@ -594,6 +615,17 @@ address p {
   .contents-area:first-child>ul {
     width: calc(40% - -34px);
   }
+
+  .footer-area a:nth-child(3),
+  .footer-area a:nth-child(4){    
+  background: none;
+  position: absolute;
+  left: -51%;
+  top: -116px;
+  }
+  .footer-area a:nth-child(4){
+    left: -32%;
+  }
 }
 
 /* 모바일 */
@@ -606,9 +638,7 @@ address p {
   }
 
   .contents-area h2+p {
-    font-size: 12px;
-    line-height: 1.4;
-    margin-bottom: 163px;
+    display: none;
   }
 
   .footer-area {
@@ -619,9 +649,7 @@ address p {
   }
 
   .cake-contents-tit {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 3px;
+   display: none;
   }
 
   #back-to-top {
@@ -817,6 +845,17 @@ address p {
     padding-top: 16px;
     font-size: 10px;
   }
+  .footer-area a:nth-child(3),
+  .footer-area a:nth-child(4){    
+  background: none;
+  position: absolute;
+  left: -171%;
+  top: -116px;
+  }
+  .footer-area a:nth-child(4){
+    left: -143%;
+  }
+
 
 }
 
@@ -1040,5 +1079,14 @@ address p {
     padding-top: 16px;
     font-size: 10px;
   }
-
+  .footer-area a:nth-child(3),
+  .footer-area a:nth-child(4){    
+  background: none;
+  position: absolute;
+  left: -171%;
+  top: -116px;
+  }
+  .footer-area a:nth-child(4){
+    left: -143%;
+  }
 }
